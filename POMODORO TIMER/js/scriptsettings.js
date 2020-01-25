@@ -1,0 +1,1 @@
+alert('We will implement this view soon');

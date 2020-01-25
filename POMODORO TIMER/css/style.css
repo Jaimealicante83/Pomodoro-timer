@@ -1,0 +1,432 @@
+/* Colors */
+/* Fonts */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #FE4040;
+}
+
+#menu {
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  background-color: #FEFEFE;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+
+#menu ul {
+  padding: 0;
+  list-style: none;
+}
+
+#menu ul li {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 100;
+  letter-spacing: .5rem;
+  color: #DA3535;
+  text-decoration: none;
+  padding: 15px 15px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+#menu ul li a:hover {
+  color: #3B3B3B;
+}
+
+#menu.clicked {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+#menu.noclicked {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+header {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 15;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+}
+
+header .container figure {
+  margin: 0;
+}
+
+header .container figure #logotype {
+  height: 70px;
+  width: 70px;
+  z-index: 33;
+  position: relative;
+}
+
+header .container figure #burger {
+  width: 50px;
+  height: 50px;
+  z-index: 33;
+  position: relative;
+}
+
+.main-section {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-section .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 90%;
+  max-width: 600px;
+}
+
+.main-section .container #construction {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: .3rem;
+  color: #FEFEFE;
+  text-shadow: 3px 3px 4px rgba(216, 0, 0, 0.43);
+  text-align: center;
+}
+
+.main-section .container #timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+}
+
+.main-section .container #timer #play {
+  height: 50px;
+  width: 50px;
+}
+
+.main-section .container #timer #play.pause {
+  content: url("../icons/pause.png");
+}
+
+.main-section .container #timer h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 5rem;
+  font-weight: 100;
+  margin: 0;
+  color: #FEFEFE;
+  text-shadow: 3px 3px 4px rgba(216, 0, 0, 0.43);
+}
+
+.main-section .container #timer p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: .8rem;
+  font-weight: 100;
+  letter-spacing: .3rem;
+  color: #FEFEFE;
+  text-shadow: 3px 3px 4px rgba(216, 0, 0, 0.43);
+}
+
+.main-section .container #blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+}
+
+.main-section .container #blocks figure {
+  margin: 0;
+  padding: 8px;
+}
+
+.main-section .container #blocks figure img {
+  height: 20px;
+  width: 20px;
+}
+
+.main-section .container #blocks input {
+  margin: 0;
+  width: 70px;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+}
+
+.main-section .container #blocks #session {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-section .container #blocks #break {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-section .container .tagspace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: .64rem;
+  letter-spacing: .07rem;
+  color: #FEFEFE;
+}
+
+.main-section .container .tagspace #tag1 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-section .container .tagspace #tag2 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  height: 15vh;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copy-container p {
+  font-family: "Heebo", sans-serif;
+  font-size: .9rem;
+  color: #FEFEFE;
+}
+
+footer .cookies-container a {
+  font-family: "Heebo", sans-serif;
+  font-size: .9rem;
+  color: #FEFEFE;
+  text-decoration: none;
+}
+
+footer .cookies-container a:hover {
+  color: orange;
+}
+
+@media (min-width: 768px) {
+  header {
+    width: 90%;
+    max-width: 800px;
+  }
+  header .container figure #logotype {
+    height: 88px;
+    width: 88px;
+  }
+  .main-section .container {
+    width: 90%;
+    max-width: 800px;
+  }
+  .main-section .container #timer p {
+    font-size: 1.1rem;
+  }
+  .main-section .container #timer h3 {
+    font-size: 7.5rem;
+  }
+  .main-section .container #blocks {
+    max-width: 600px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .main-section .container #blocks figure {
+    margin: 0;
+    padding: 8px;
+  }
+  .main-section .container #blocks figure img {
+    height: 40px;
+    width: 40px;
+  }
+  .main-section .container #blocks input {
+    height: 50px;
+    width: 120px;
+    font-size: 1.7rem;
+  }
+  .main-section .container .tagspace {
+    width: 600px;
+    min-width: 600px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  footer {
+    width: 90%;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    max-width: 1200px;
+  }
+  header .container figure #logotype {
+    height: 98px;
+    width: 98px;
+  }
+  #menu ul li {
+    font-size: 4rem;
+    padding: 50px;
+  }
+  .main-section .container {
+    max-width: 1200px;
+  }
+  .main-section .container #construction {
+    font-size: 2rem;
+  }
+  .main-section .container #timer p {
+    font-size: 2rem;
+  }
+  .main-section .container #timer h3 {
+    font-size: 8.5rem;
+  }
+  .main-section .container #blocks {
+    max-width: 800px;
+  }
+  .main-section .container .tagspace {
+    width: 800px;
+    min-width: 800px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1rem;
+  }
+  footer {
+    max-width: 1200px;
+  }
+  footer .copy-container p {
+    font-family: "Heebo", sans-serif;
+    font-size: 1.1rem;
+    color: #FEFEFE;
+  }
+  footer .cookies-container a {
+    font-family: "Heebo", sans-serif;
+    font-size: 1.1rem;
+    color: #FEFEFE;
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

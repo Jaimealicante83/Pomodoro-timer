@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro timer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo| Playfair|Nunito+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="menu">
+        <ul>
+            <li><a href="settings.html">SETTINGS</li></a>
+            <li><a href="http://jaimealicante.es/" target="_blank">PORTFOLIO</li></a>
+            <li><a href="https://www.infojobs.net/candidate/cv/view/index.xhtml?dgv=1303633078754563894" target="_blank">INFOJOBS</li></a>
+        </ul>
+    </div>
+
+
+
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <figure>
+                  <img id="logotype" src="logo/logopomodoro.png" alt="logo">
+                </figure>
+            </a>
+
+            <figure>
+                <img src="icons/burger.png" id="burger" alt="burger menu">
+            </figure>
+        </div>
+    </header> 
+
+
+    <div class="main-section">
+        <div class="container">
+          
+            <div id="timer">
+                <figure>
+                    <img id="play" src="icons/play.png" alt="play">
+                </figure>
+                <p>START SESSION</p>
+                <h3 id="counting">25.00</h3>
+                <figure>
+                    <img src="icons/restart.png" alt="play">
+                </figure>
+            </div>
+            
+            
+
+
+            <div id="blocks">
+                <div id="session">
+                    <figure id="moreTime">
+                        <img src="icons/plus.png" alt="add">
+                    </figure>
+                    <input id="input1" type="number" value="25">
+                    <figure id="lessTime">
+                        <img src="icons/minus.png" alt="add">
+                    </figure>
+                </div>
+
+                <div id="break">
+                   <figure id="moreBreak">
+                       <img src="icons/plus.png" alt="add">
+                   </figure>
+                      <input id="input2" type="number" value="5">
+                    <figure id="lessBreak">
+                        <img src="icons/minus.png" alt="add">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="tagspace">
+                <div id="tag1">
+                    <p>SESSION LENGTH</p>
+                </div>
+                <div id="tag2">
+                    <p>BREAK LENGTH</p>
+                </div>
+             </div>
+        </div>
+    </div>
+        
+    </div>
+
+    <footer>
+            <div class="copy-container">
+                <p>All rights reserved 2020 &copy</p>
+            </div>
+
+            <div class="cookies-container">
+                <a href="https://www.google.com/">Cookies Policy</a>
+            </div>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
